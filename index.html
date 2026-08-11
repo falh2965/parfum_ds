@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PARFUM DS</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- شريط العنوان -->
+ <header>
+  <img src="imgs/logo.png" alt="PARFUM DS" class="logo" style="width: 100px; height: 100px; margin-bottom: 20px;"/>
+  <h1>PARFUM DS</h1>
+  <p style="color: #c9a84c; font-size: 0.85rem; letter-spacing: 0.15em; margin-top: 8px;">جوهر الأناقة</p>
+</header>
+  <!-- أزرار الفلتر -->
+  <div class="filters">
+    <button class="filter-btn active" data-cat="all">الكل</button>
+    <button class="filter-btn" data-cat="رجالي">رجالي</button>
+    <button class="filter-btn" data-cat="نسائي">نسائي</button>
+    <button class="filter-btn" data-cat="مختلط">مختلط</button>
+  </div>
+
+  <!-- البحث -->
+  <div class="search-wrap">
+    <input type="text" id="searchInput" placeholder="ابحث عن عطر..."/>
+  </div>
+
+  <!-- الكاردات -->
+  <div class="grid" id="grid"></div>
+
+  <!-- زر السلة الثابت ✅ مصحح -->
+  <button class="cart-fab" id="cartFab">
+    <i class="fa-solid fa-bag-shopping"></i>
+    السلة (<span id="cartCount">0</span>)
+  </button>
+
+  <!-- الدرار (السلة) -->
+  <div class="overlay" id="overlay"></div>
+  <div class="drawer" id="drawer">
+    <h2><i class="fa-solid fa-receipt"></i> طلبك</h2>
+    <div id="cartItems"></div>
+    <p id="totalPrice"></p>
+    <button id="btnCheckout">
+      <i class="fa-brands fa-whatsapp"></i>
+      أرسل على واتساب
+    </button>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
